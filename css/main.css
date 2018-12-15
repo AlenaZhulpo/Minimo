@@ -1,0 +1,547 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'playfair_displayblack';
+    src: url('../fonts/playfairdisplay-black-webfont.eot');
+    src: url('../fonts/playfairdisplay-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-black-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-black-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('../fonts/playfairdisplay-bold-webfont.eot');
+    src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('../fonts/playfairdisplay-italic-webfont.eot');
+    src: url('../fonts/playfairdisplay-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-italic-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-italic-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../fonts/playfairdisplay-regular-webfont.eot');
+    src: url('../fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('../fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+         url('../fonts/playfairdisplay-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../fonts/ubuntu-light-webfont.eot');
+    src: url('../fonts/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-light-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Main layout*/
+body {
+    min-width: 1100px;
+    color: #626262;
+    font: normal 14px/24px 'playfair_displayregular', 'Times New Roman', sans;
+}
+
+.fixed_width_container {
+    width: 1060px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 13px;
+}
+
+h2 {
+    color: #b4ad9e;
+    font: normal 14px/24px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font: normal 20px/35px 'playfair_displayregular', 'Timae New Roman', sans;
+    margin-top: 15px;
+}
+
+h4 {
+     font: normal 24px/30px 'playfair_displayregular', 'Timae New Roman', sans;
+}
+
+/*Header*/
+header .fixed_width_container {
+    overflow: hidden;
+    padding-top: 68px;
+    padding-bottom: 70px;
+}
+
+header .logo {
+    float: left;
+    width: 119px;
+    display: block;  
+}
+
+header nav {
+    float: right;
+    width: 940px;
+    text-align: right;
+}
+
+header nav li, header nav li a {
+    display: inline-block;
+}
+
+header nav li {
+    margin-left: 93px;
+}
+
+header nav li a {
+    color: #626262;
+    text-transform: uppercase;
+}
+
+header nav li a:hover {
+    color: #000;
+}
+
+/*Main image*/
+.main_image {
+    margin-bottom: 93px;
+}
+
+/*Main content*/
+.main_content {
+    overflow: hidden;
+}
+
+/*Main article*/
+main article {
+    float: left;
+    width: 661px;
+    margin-left: 80px;
+    margin-bottom: 108px;
+}
+
+main article > p {
+    margin-top: 23px;
+    margin-bottom: 61px;
+}
+
+main article > p strong {
+    font-family: 'playfair_displayblack', 'Times New Roman', sans;
+    font-weight: normal;
+}
+
+main article > img {
+    margin-top: 50px;
+}
+
+main .italic {
+    font-family: 'playfair_displayitalic', 'Times New Roman', sans;
+    margin: 57px 10px 0 21px; 
+}
+
+/*Social icons*/
+article .social_icons {
+    text-align: right;
+    padding-top: 8px;
+}
+
+article .social_icons p {
+    color: #b4ad9e;
+    font: normal 13px/24px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+article .social_icons li, article .social_icons li a {
+    display: inline-block;
+    height: 17px;
+}
+
+article .social_icons .facebook {
+    width: 9px;
+    background: url(../images/facebook.png) no-repeat center 0;
+    margin-left: 18px;
+}
+
+article .social_icons .twitter {
+    width: 18px;
+    background: url(../images/twitter.png) no-repeat center 0;
+}
+
+article .social_icons .google_plus {
+    width: 17px;
+    background: url(../images/google.png) no-repeat center 0;
+}
+
+article .social_icons .tumblr {
+    width: 11px;
+    background: url(../images/tumblr.png) no-repeat center 0;
+}
+
+article .social_icons .pinterest {
+    width: 18px;
+    background: url(../images/pinterest.png) no-repeat center 0;
+    margin-right: 4px;
+}
+
+article .social_icons a {
+    margin-left: 16px;
+}
+
+article .social_icons a:hover {
+    background-position: center -17px;
+}
+
+/*Other posts*/
+.other_posts {
+    background-color: #f5f5f5;
+}
+
+.other_posts_container {
+    padding: 65px 80px 83px;
+}
+
+.post_items {
+    overflow: hidden;
+    margin-top: 33px;
+}
+
+.post_items .post_items_col {
+    width: 273px;
+    float: left;
+    margin-left: 40px;
+    display: block;
+    color: #626262;
+}
+
+.post_items .post_items_col:hover {
+    color: black;
+}
+
+.post_items .post_items_col:first-child {
+    margin-left: 1px;
+}
+
+/*Comments*/
+.comments_container {
+    padding: 60px 80px 66px;
+}
+
+.comment_img {
+    float: left;
+    margin-top: 7px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    text-align: center;
+    font: normal 34px/70px 'ubuntulight', Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.comments_container h2 {
+    margin-bottom: 30px;
+}
+
+.comment_item {
+    margin-bottom: 44px;
+}
+
+.comments_container .comment_item:nth-child(3) .comment_img {
+    background-color: #cae5e0;
+}
+
+.comments_container .comment_item:nth-child(4) .comment_img {
+    background-color: #ededea;
+}
+
+.comments_container .comment_item:nth-child(4) {
+    margin-bottom: 33px;
+}
+
+.comment {
+    margin-left: 106px;
+}
+
+.comment .name {
+    margin-left: 3px;
+    font-family: 'playfair_displaybold', 'Times New Roman', sans;
+}
+
+.comment p {
+    margin-bottom: 4px;
+}
+
+.comment a {
+    margin-left: 2px;
+    margin-top: 14px;
+    color: #b4ad9e;
+    font: normal 14px/20px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.comment a:hover {
+    color: black;
+}
+
+.comment_item input {
+    color: #626262;
+    font: normal 14px/24px 'playfair_displayregular', 'Times New Roman', sans;
+    margin-top: 8px;
+    width: 723px;
+    border: 1px solid #c8c8c8;
+    border-radius: 3px;
+    padding: 26px 34px 27px;
+}
+
+
+.comment_item input::placeholder {
+    text-transform: uppercase;
+    color: #c8c8c8;
+    font: normal 14px/20px 'ubuntulight', Arial, sans-serif;
+}
+
+
+/*Post*/
+.post {
+    text-align: right;
+}
+
+.post li, .post li a {
+    display: inline-block;
+    height: 17px;
+}
+
+.post p {
+    color: #b4ad9e;
+    font: normal 14px/24px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.post .facebook {
+    width: 9px;
+    background: url(../images/facebook.png) no-repeat center 0;
+    margin-left: 18px;
+}
+
+.post .twitter {
+    width: 18px;
+    background: url(../images/twitter.png) no-repeat center 0;
+    margin-left: 35px;
+}
+
+.post a:hover {
+    background-position: center -17px;
+}
+
+
+/*Aside*/
+aside {
+    padding-top: 1px;
+    float: right;
+    width: 272px;
+}
+
+aside h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+aside p {
+     font: normal 12px/20px 'playfair_displayregular', 'Timae New Roman', sans;
+}
+
+aside .social_icons {
+    padding-top: 19px;
+    padding-bottom: 61px;
+}
+
+aside .social_icons li, aside .social_icons li a {
+    display: inline-block;
+    height: 17px;
+}
+
+aside .social_icons a:hover {
+    background-position: center -17px;
+}
+
+aside .facebook {
+    width: 9px;
+    background: url(../images/facebook.png) no-repeat center 0;
+    margin-right: 17px;
+}
+
+aside .instagram {
+    width: 18px;
+    background: url(../images/instagram.png) no-repeat center 0;
+    margin-right: 15px;
+}
+
+aside .pinterest {
+    width: 18px;
+    background: url(../images/pinterest.png) no-repeat center 0; 
+}
+
+aside h2 {
+    padding-bottom: 25px;
+}
+
+aside .top_posts {
+    padding-bottom: 30px;
+} 
+
+aside .top_posts li {
+    padding-left: 28px;
+    margin-bottom: 19px;
+    background: url(../images/ellipce.png) no-repeat 1px 9px;
+}
+
+aside .top_posts li a {
+    display: inline-block;
+}
+
+aside .top_posts a.post_item {
+    font: normal 16px/20px 'playfair_displayregular', 'Timae New Roman', sans;
+    color: #626262;
+    margin-bottom: 6px;
+}
+
+aside .top_posts a.comments {
+    font: normal 12px/16px 'ubuntulight', Arial, sans-serif;
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+aside .top_posts a.post_item:hover, aside .top_posts a.comments:hover {
+    color: #000;
+}
+
+aside .banner_spot {
+    display: inline-block;
+    width: 251px;
+    text-align: center;
+    padding: 95px 0 74px;
+    background: url(../images/aside_background.png) no-repeat 0px 0;
+}
+
+aside .banner_spot p {
+    color: #fff;
+    font: normal 14px/20px 'ubuntulight', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+aside .banner_spot p:first-child{
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 6px;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #f0f0f0;
+}
+
+footer .fixed_width_container {
+    overflow: hidden;
+}
+
+footer .fixed_width_container > div {
+    padding: 35px 0 36px 80px;
+}
+
+footer .confidentiality {
+    float: left;
+    width: 296px;
+    box-sizing: border-box;
+}
+
+footer .follow_social {
+    float: right;
+    width: 273px;
+}
+
+footer li, footer li a {
+    display: inline-block;
+    font: normal 14px/24px 'playfair_displayregular', 'Timae New Roman', sans;
+    color: #000;
+}
+
+.confidentiality li {
+    margin-right: 16px;
+}
+
+.confidentiality li a:hover {
+    color: #b4ad9e;
+}
+
+.follow_social {
+    text-align: right;
+}
+
+.follow_social li > a {
+    margin-top: 4px;
+}
+
+.follow_social .facebook {
+    width: 8px;
+    background: url(../images/footer_icon_facebook.png) no-repeat center 0;
+    margin-left: 22px;
+}
+
+.follow_social .twitter {
+    width: 18px;
+    background: url(../images/footer_icon_twitter.png) no-repeat center 0;
+    margin-left: 17px;
+}
+
+.follow_social .instagram {
+    width: 15px;
+    background: url(../images/footer_icon_instagram.png) no-repeat center 0;
+    margin-left: 19px;
+}
+
+.follow_social a:hover {
+    background-position: center -15px;
+}
+
+
+
+
+
+
+
